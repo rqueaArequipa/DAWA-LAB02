@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap');
+@font-face {
+    font-family: 'Impact Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Impact Regular'), url('./fonts/impact.woff') format('woff');
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0E2C40;
+    font-family: 'Inconsolata', monospace;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #C1E1A7;
+    font-size: 35px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 1em;
+    background-color: #1A4A5A;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #148D8D;
+}

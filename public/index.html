@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio - R Freddy Quea</title>
+</head>
+
+<body>
+
+    <!--banner-->
+    <header>
+        <nav>
+                <img class="img" src="/img/logo.png" alt="#">
+            <a href="#" id="menu"><img src="./img/menu.png" alt="menu"></a>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#historia">Sobre mí</a></li>
+                <li><a href="#minhas-habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Proyectos </a></li>
+                <li><a href="#contact">Contáctame </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--menu options-->
+    <main>
+
+        <!--section information-->
+        <section id="home">
+            <div id="sobre">
+                <h1>Freddy Quea</h1>
+                <h2>Desarrollador web y de aplicaciones full-stack</h2>
+                <h3>Diseñador UI/UX en formación</h3>
+                <h4>Siempre aprendiendo cosas nuevas</h4>
+            </div>
+
+            <div id="codigo">
+                <span>
+                    <pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                            
+                    let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                            
+                    <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                            
+                    function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
+                        let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    
+                        element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    
+                        function writeSymbols() {
+                            element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                            element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    
+                            if (element.count &lt;= element_array.length) {
+                                setTimeout(() =&gt; {
+                                    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                            } else if (element.count &gt;= element_array.length) {
+                                element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    
+                                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                            }
+                        }
+                        writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    }</pre>
+                </span>
+            </div>
+        </section>
+
+        <!--section history-->
+        <section id="historia">
+            <img src="./img/log-main.png" alt="QJ Developer">
+            <h1>Hola, soy Freddy Quea. Soy un desarrollador web apasionado por la creación de experiencias interactivas y funcionales. Me encanta el diseño UX/UI y tengo experiencia en la creación de aplicaciones web modernas y atractivas. He trabajado en varias startups y tengo una sólida formación en Ingeniería Informática. Mis habilidades incluyen HTML, CSS, JavaScript, React y Node.js.</h1>
+        </section>
+
+        <section id="experiencia-laboral">
+            <h1>Experiencia Laboral</h1>
+            
+            <div class="trabajo">
+                <h2>Desarrollador Web - Pasante</h2>
+                <p>Empresa Controla - Arequipa, Peru | Agosto 2023 - Presente</p>
+                <ul>
+                    <li>Documentacion de la base de datos</li>
+                    <li>Documentacion de Backend</li>
+                    <li>Documentacion de Frontend</li>
+                </ul>
+            </div>
+
+            <div class="trabajo">
+                <h2>Desarrollador Full-stack - Proyecto Final</h2>
+                <p>Proyecto Final Tecsup - Arequipa, Peru | Abril 2023 - Julio 2023</p>
+                <ul>
+                    <li>Creación de interfaces de usuario atractivas y funcionales.</li>
+                    <li>Optimización de rendimiento y experiencia del usuario en sitios web.</li>
+                    <li>Configuracion de Firebase para las notificaciones - Backend</li>
+                    <li>Creación de Apis</li>
+                    <li>Implimentacion de Apis en Frontend</li>
+                    <li>Listado de tados obteneidos del Api</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="educacion">
+            <h1>Educación</h1>
+            
+            <div class="carrera">
+                <h2>Diseño y Desarrollo de Software</h2>
+                <p>Tecsup - Arequipa, Peru | 2021 - 2024>
+                <p>Estado: Actualmente Estudiando</p>
+            </div>
+        
+            <div class="carrera">
+                <h2>Especialización en Backend</h2>
+                <p>Alura Latam - Peru | 2022 - 2024</p>
+                <p>Estado: Actualmente Estudiando</p>
+            </div>
+        </section>
+        
+        
+
+        <!--My Hability-->
+        <section id="minhas-habilidades">
+            <h1 class="titulo">Mis Habilidades</h1>
+            <div id="habilidades">
+                <div class="card">
+                    <img src="./img/iconhtml.png" alt="HTML5" class="normal">
+                    <img src="./img/iconhtmlhover.png" alt="HTML5" class="hover">
+                    <h1>HTML5</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/iconcss.png" alt="CSS3" class="normal">
+                    <img src="./img/iconcsshover.png" alt="CSS" class="hover">
+                    <h1>CSS3</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/iconjs.png" alt="JAVASCRIPT" class="normal">
+                    <img src="./img/iconjshover.png" alt="JAVASCRIPT" class="hover">
+                    <h1>JavaScript</h1>
+                </div>
+        
+                <div class="card">
+                    <img src="./img/icon-py.png" alt="PYTHON" class="normal">
+                    <img src="./img/icon-py-c.png" alt="PYTHON" class="hover">
+                    <h1>Python</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon-javac.png" alt="JAVA" class="normal">
+                    <img src="./img/icon-java-c.png" alt="JAVA" class="hover">
+                    <h1>Java</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="contactsh1">Contacto</h1>
+            <form class="forms" action="confirmacion.html" method="post" target="_blank">
+                <label class="labelform" for="nombre">Nombre:</label>
+                <input class="inputtext" type="text" id="nombre" name="nombre" required><br>
+        
+                <label class="labelform" for="email">Correo electrónico:</label>
+                <input class="inputtext" type="email" id="email" name="email" required><br>
+
+                <label class="labelform" for="mensaje">Mensaje:</label>
+                <textarea class="inputtext" name="texttarea" id="mensaje" cols="30" rows="10"></textarea> <br>
+        
+                <input class="inputtext" type="submit" value="Enviar">
+            </form>
+        </section>
+
+
+        
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div id="msg">
+            <div id="log">
+                <h2><img class="logo" src="./img/developer.jpg" alt=""></h2>
+            </div>
+            <div id="contatos">
+                <h1>Contacts</h1>
+                <ul>
+                    <li><img src="./img/gmail.png" alt="gmail"> <a href="ruben.quea@tecsup.edu.pe"
+                            target="_blank">ruben.quea@tecsup.edu.pe</a></li>
+                    <li><img src="./img/instagram.png" alt="instagram"><a href="https://www.instagram.com/freddy.developer/"
+                            target="_blank">@freddy.developer</a></li>
+                    <li><img src="./img/github.png" alt="github"> <a href="https://github.com/rqueaArequipa"
+                            target="_blank">rqueaArequipa</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
